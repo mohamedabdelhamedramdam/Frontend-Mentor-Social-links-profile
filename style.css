@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 100%);
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: "Inter", sans-serif;
+}
+main {
+  background-color: hsl(0, 0%, 12%);
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+  border-radius: 1rem;
+}
+.profile-pic {
+  border-radius: 50%;
+  width: 80px;
+  height: auto;
+  margin-bottom: 2.5rem;
+}
+.name {
+  font-weight: 700;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+.location {
+  font-size: 1.2rem;
+  color: hsl(75, 94%, 57%);
+  margin-bottom: 2rem;
+}
+.job {
+  font-size: 1.2rem;
+  margin-bottom: 1.7rem;
+}
+.social-links {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  gap: 1.3rem;
+}
+.social-links button {
+  background-color: hsl(0, 0%, 20%);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 1rem 5rem;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.social-links a:link,
+.social-links a:visited {
+  text-decoration: none;
+  color: white;
+}
+button:hover {
+  background-color: hsl(0, 0%, 8%);
+}
+@media (max-width: 450px) {
+  main {
+    max-width: 90%;
+  }
+}
+@media (max-width: 350px) {
+  html {
+    font-size: 50%;
+  }
+}
