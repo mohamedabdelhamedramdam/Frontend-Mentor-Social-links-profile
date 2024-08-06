@@ -53,7 +53,7 @@ main {
   width: 100%;
   gap: 1.3rem;
 }
-.social-links button {
+.social-links a {
   background-color: hsl(0, 0%, 20%);
   border: none;
   outline: none;
@@ -61,13 +61,14 @@ main {
   padding: 1rem 5rem;
   border-radius: 5px;
   transition: all 0.3s ease;
+  display: inline-block;
 }
 .social-links a:link,
 .social-links a:visited {
   text-decoration: none;
   color: white;
 }
-button:hover {
+a:hover {
   background-color: hsl(0, 0%, 8%);
 }
 @media (max-width: 450px) {
